@@ -1,5 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -166,6 +167,24 @@ nav svg {
 .more-info .description {
   font-size: 1.2rem;
   margin-bottom: 1.6rem;
+}
+
+.footer-section {
+  padding: 0;
+}
+
+.main-footer {
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  padding: 2.4rem;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .open-nav {
@@ -365,6 +384,16 @@ nav svg {
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: right center;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .section-hero h1 {
+    font-size: 9rem;
+    margin-bottom: 5rem;
+  }
+  .section-hero .subhead {
+    font-size: 3rem;
   }
 }
 

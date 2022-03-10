@@ -1,5 +1,6 @@
 body {
 	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
 }
 
 a {
@@ -154,6 +155,22 @@ nav {
 		font-size: 1.2rem;
 		margin-bottom: 1.6rem;
 	}
+}
+
+// FOOTER
+
+.footer-section {
+	padding: 0;
+}
+
+.main-footer {
+	background-color: #000;
+	width: 100%;
+	color: #fff;
+	padding: 2.4rem;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
 }
 
 .open-nav {
@@ -380,6 +397,18 @@ nav {
 		background-repeat: no-repeat;
 		background-position: right center;
 		// z-index: 200;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	.section-hero {
+		h1 {
+			font-size: 9rem;
+			margin-bottom: 5rem;
+		}
+		.subhead {
+			font-size: 3rem;
+		}
 	}
 }
 
