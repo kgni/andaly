@@ -1,4 +1,183 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+a {
+  text-decoration: none;
+  font-size: rem;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.container {
+  padding: 2rem;
+  height: 100%;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../img/hero-img.png");
+  background-color: #d8b6ad;
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 180px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header {
+  margin-bottom: 6.8rem;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  color: #000;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+nav ul {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #fff;
+  height: 100%;
+  width: 50%;
+  z-index: 999;
+  text-transform: uppercase;
+  padding-top: 10rem;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+}
+
+nav ul a {
+  font-size: 1.6rem;
+  color: #000;
+  width: 100%;
+  padding: 0.8rem 3.2rem;
+  display: block;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+nav ul a:hover {
+  background-color: #dddddd;
+}
+
+nav ul .close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  width: 2.4rem;
+}
+
+nav svg {
+  width: 3rem;
+  fill: #000;
+  cursor: pointer;
+}
+
+.section-hero {
+  height: 90%;
+}
+
+.section-hero h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+}
+
+.section-hero .subhead {
+  font-size: 1.6rem;
+}
+
+.section-hero .down-arrow {
+  position: absolute;
+  width: 1.6rem;
+  bottom: 3rem;
+}
+
+.more-info .feature {
+  margin-bottom: 2.4rem;
+}
+
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 25rem;
+}
+
+.more-info .title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.more-info .description {
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .container {
+    padding: 2rem 3rem;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  .container {
+    padding: 2rem 6rem;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position-x: -20%;
+    background-position-y: 180px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  nav ul {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
