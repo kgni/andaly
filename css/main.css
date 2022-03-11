@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,7 @@ section {
 
 .hero-img {
   position: absolute;
-  background-color: #d8b6ad;
+  background-color: #c5cff8;
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -44,28 +44,19 @@ header {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 nav .logo {
   color: black;
   font-weight: 700;
   font-size: 2rem;
   letter-spacing: 2px;
 }
-
 nav .logo span {
-  color: #000;
+  color: #7905e6;
 }
-
 nav ul {
   position: fixed;
   right: 0;
@@ -76,35 +67,26 @@ nav ul {
   z-index: 999;
   text-transform: lowercase;
   padding-top: 10rem;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
+  transform: translateX(100%);
   transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
-
 nav ul a {
   font-size: 1.6rem;
   color: #000;
   width: 100%;
   padding: 0.8rem 3.2rem;
   display: block;
-  -webkit-transition: 200ms ease;
   transition: 200ms ease;
 }
-
 nav ul a:hover {
   background-color: #dddddd;
 }
-
 nav ul .close {
   position: absolute;
   top: 1.6rem;
   right: 1.6rem;
   width: 2.4rem;
 }
-
 nav svg {
   width: 3rem;
   fill: #000;
@@ -118,7 +100,6 @@ nav svg {
   opacity: 0;
   position: relative;
 }
-
 .section-hero h1 {
   font-size: 3.8rem;
   font-weight: 700;
@@ -126,12 +107,10 @@ nav svg {
   margin-bottom: 3.2rem;
   width: 90%;
 }
-
 .section-hero .subhead {
   font-size: 1.6rem;
   width: 80%;
 }
-
 .section-hero .down-arrow {
   position: absolute;
   width: 1.6rem;
@@ -140,30 +119,25 @@ nav svg {
 }
 
 .more-info {
-  padding: 4.8rem 0;
+  padding: 4.8rem 2rem;
 }
-
 .more-info .feature {
   margin-bottom: 2.4rem;
 }
-
 .more-info .feature:last-child {
   margin-bottom: 0;
 }
-
 .more-info img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   height: 25rem;
 }
-
 .more-info .title {
   font-weight: 700;
   font-size: 1.8rem;
   margin-bottom: 0.8rem;
 }
-
 .more-info .description {
   font-size: 1.2rem;
   margin-bottom: 1.6rem;
@@ -179,23 +153,19 @@ nav svg {
   color: #fff;
   padding: 2.4rem;
   font-size: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .open-nav {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 @media only screen and (min-width: 660px) {
   .container {
     padding: 2rem 6rem;
   }
+
   .hero-shoe {
     position: absolute;
     bottom: -7.5%;
@@ -208,19 +178,21 @@ nav svg {
     background-position: right center;
   }
 }
-
 @media only screen and (min-width: 725px) {
   .container {
     padding: 2rem 6rem;
   }
+
   .section-hero h1 {
     font-size: 4.8rem;
     width: 80%;
   }
+
   .section-hero .subhead {
     font-size: 1.8rem;
     width: 70%;
   }
+
   .hero-shoe {
     position: absolute;
     bottom: -7.5%;
@@ -233,7 +205,6 @@ nav svg {
     background-position: right center;
   }
 }
-
 @media only screen and (min-width: 800px) {
   .hero-img {
     position: absolute;
@@ -247,24 +218,21 @@ nav svg {
     z-index: -1;
   }
 }
-
 @media only screen and (min-width: 920px) {
   .menu {
     display: none;
   }
+
   nav .logo span {
-    color: #f8ae23;
+    color: #7905e6;
   }
   nav ul {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     position: unset;
     display: block;
     width: auto;
     height: auto;
     background: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0;
@@ -281,6 +249,7 @@ nav svg {
   nav svg.close {
     display: none;
   }
+
   .section-hero {
     height: 90%;
     width: 50%;
@@ -297,12 +266,14 @@ nav svg {
     font-size: 2rem;
     width: unset;
   }
+
   .hero-img {
     left: unset;
     right: 0;
     width: 50%;
     height: 60rem;
   }
+
   .hero-shoe {
     position: absolute;
     bottom: 15%;
@@ -314,24 +285,21 @@ nav svg {
     background-repeat: no-repeat;
     background-position: right center;
   }
+
   .more-info .feature {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -webkit-column-gap: 6rem;
-            column-gap: 6rem;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
     margin-bottom: 6rem;
   }
   .more-info .feature .content {
     text-align: right;
   }
   .more-info .feature.left {
-        grid-template-areas: 'left right';
+    grid-template-areas: "left right";
   }
   .more-info .feature.left img {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: left;
   }
   .more-info .feature.left .content {
@@ -345,35 +313,30 @@ nav svg {
     line-height: 1.8;
   }
 }
-
 @media only screen and (min-width: 1193px) {
   nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
   nav .logo {
     font-weight: 700;
     font-size: 4rem;
   }
   nav .logo span {
-    color: #f8ae23;
+    color: #7905e6;
   }
   nav ul a {
     font-size: 1.8;
     font-weight: 400;
     text-transform: lowercase;
   }
+
   .section-hero h1 {
     font-size: 6.8rem;
     margin-bottom: 5rem;
   }
+
   .hero-shoe {
     position: absolute;
     bottom: -8%;
@@ -385,9 +348,16 @@ nav svg {
     background-repeat: no-repeat;
     background-position: right center;
   }
-}
 
+  .more-info {
+    margin-top: 9.6rem;
+  }
+}
 @media only screen and (min-width: 1400px) {
+  header {
+    margin-bottom: 10rem;
+  }
+
   .section-hero h1 {
     font-size: 9rem;
     margin-bottom: 5rem;
@@ -396,7 +366,6 @@ nav svg {
     font-size: 3rem;
   }
 }
-
 @-webkit-keyframes introLoad {
   from {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -407,7 +376,6 @@ nav svg {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-
 @keyframes introLoad {
   from {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -418,50 +386,37 @@ nav svg {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
-
 @-webkit-keyframes moveDown {
   from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 @keyframes moveDown {
   from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes moveArrow {
   from {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
 }
-
 @keyframes moveArrow {
   from {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
+    transform: translateY(-10px);
   }
   to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    transform: translateY(0);
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
